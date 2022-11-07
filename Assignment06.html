@@ -1,0 +1,74 @@
+<!HTML Document>
+<html>
+<head>
+
+<title>
+Assignment 06 
+</title>
+<script>
+function glue()
+{
+
+document.querySelector("#fullname").value =
+document.querySelector("#first").value
++ " "
++document.querySelector("#last").value
+
+}
+
+function choicefall()
+{
+alert(" Fall is such a great choice!!! Definetly the best season!!!");
+}
+function choicewinter()
+{
+alert( "Pretty good pick winter has the best Holiday!")
+}
+
+function choicespring()
+{
+alert( "Spring has pretty flowers. You must also love the rain!")
+}
+function choicesummer()
+{
+alert( "Summer is so hot. You have to enjoy the HEAT!")
+}
+
+function hey()
+
+{
+document.querySelector("#no").innerHTML = 
+"Now Choose What Season You like best, " +
+document.querySelector("#first").value;
+}
+
+</script>
+
+</head>
+<body>
+<h2> <b> What is yout Favorite Season?</b></h2><br>
+<form name=javascript>
+First:<input type=text id="first" onchange="hey();"><br>
+Last:<input type=text id="last" onchange="glue();"><br>
+Full: <input type=text id="fullname"><br>
+
+
+<input type=checkbox id="fall" onclick="choicefall();">Fall!<br>
+<input type=checkbox id="winter" onclick="choicewinter();">Winter!<br>
+<input type=checkbox id="spring" onclick="choicespring();">Spring!<br>
+<input type=checkbox id="summer" onclick="choicesummer();">Summer!<br>
+<input type=reset value"Clear All">
+
+</form>
+
+<div id= no>	
+<h3>Type your name in the boxes above</h3>
+</div>
+
+
+
+
+</body>
+
+
+<html>
