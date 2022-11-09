@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+   <head>
+      <title>Assignment 07</title>
+      <script>
+        var bgToggle=true;
+        function makeRed()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="red";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+		
+		function makegreen()
+		 {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="lime";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        } 
+		
+		function makeyellow()
+		 {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="yellow";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        } 
+		
+		
+		function makeblue()
+		 {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="blue";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        } 
+		
+		function doSum()
+        {
+           var sum=0 ;
+           var N = parseInt( document.querySelector("#end").value );
+           for (i=parseInt( document.querySelector("#start").value ); i<= parseInt( document.querySelector("#end").value ); i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = " The result of your summation is:"+sum;
+        }
+		
+		
+		
+		
+		function Add()
+		{
+          document.querySelector("#output").value
+         = parseFloat(document.querySelector("#input1").value)
+         + parseFloat(document.querySelector("#input2").value); 
+        }
+		
+		function Subtract()
+		{
+          document.querySelector("#output").value
+         = parseFloat(document.querySelector("#input1").value)
+         - parseFloat(document.querySelector("#input2").value); 
+        }
+		
+		function Divide()
+		{
+          document.querySelector("#output").value
+         = parseFloat(document.querySelector("#input1").value)
+         / parseFloat(document.querySelector("#input2").value); 
+        }
+		
+		function Multiply()
+		{
+          document.querySelector("#output").value
+         = parseFloat(document.querySelector("#input1").value)
+         * parseFloat(document.querySelector("#input2").value); 
+        }
+      </script>
+   </head>
+   <body>
+      <form name=background>
+	  <h2><b>Choose your color!!</b></h2>
+        <input type=button value="Red" onclick="makeRed();">
+		<input type=button value="green" onclick="makegreen();">
+		<input type=button value="blue" onclick="makeblue();">
+		<input type=button value="yellow" onclick="makeyellow();"><br>
+		<h2><b>Summation </b></h2>
+		Starting Number: <input type=text id="start"><br>
+		Ending number: <input type=text id="end"><br>
+        <input type=button value="Start the Sum" onclick="doSum();">
+        <div id="sumHere">
+          Your sum is will appear here
+        </div>
+		 <h2><b>Is this a Calculator?</b></h2>
+		  <input type=text id="input1">
+		  <input type=button value="+" onclick="Add();">
+		  <input type=button value="-" onclick="Subtract();">
+		  <input type=button value="*" onclick="Multiply();">
+		  <input type=button value="/" onclick="Divide();">
+		  <input type=text id="input2"> =
+		  <input type=text id="output"><br>
+		  <input type=reset value="clear">
+      </form>
+   </body>
+</html>
