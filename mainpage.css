@@ -1,0 +1,29 @@
+
+h1{	
+font-size: 75px;
+font-family: Brush Script MT, cursive;
+}
+h6 {
+	font-size: 35px
+}
+body{
+	background-image: url("real.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size:99.5% 100%; } 
+	
+    
+}
+
+td{
+	background-color: silver;
+}
+
+mark{
+  background-color: silver;
+  color: black;
+}
+
+table
+ { background-color: silver;}
+ 
+ h2 {
+	 font-weight: bold;
+ }

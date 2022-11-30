@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Evan Thomas, 11/28/22, This is a HTML document that is in the form of a pizza order website.  --> 
+<html>
+<head>
+<link rel="stylesheet" href="mainpage.css">
+
+<title> Application Page</title>
+<style>
+
+ body{
+ 
+	background-image: url("application.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size:99.5% 100%; 
+	} 
+</style>
+	
+</head>
+<body>
+<form name="appliaction">
+<h1> Spacecat Medical School Application  </h1>
+Once you have submitted your application click <a href="Main.html"> here</a> to go back to the main page.
+<h2> Program </h2><br>
+
+<label for="days">Select the program you will be applying for:</label> <br>
+<SELECT NAME="program" id="program" size=1> 
+<option>Medical school</option><br>
+<option>Accelerated Medical Program</option> 
+<option>Nursing</option>
+</select>
+
+<h2> Personal Information </h2> <br>
+**note * means required field or your application will be void**<br>
+ 
+First Name*<br>
+<input type="text" name="first name" Value=" " size=25><br>
+
+Middle Name<br>
+<input type="text" name="Middle Name" Value="" size=25><br>
+ 
+Last Name*<br>
+<input type="text" name="Last name" Value=" " size=25><br>
+
+Date of birth*<br>
+<input type="date" id="birthday" name="birthday">
+
+<h2>Address</h2>
+Permanant Home address*<br>
+<input type="text" name="Address" Value=" " size=25><br>
+Alternate mailing address<br>
+<input type="text" name="Addressalt" Value=" " size=25><br>
+
+<h2> Contact Details</h2>
+Prefered Phone*<br>
+<INPUT TYPE=RADIO NAME="Mobile" VALUE="Thin"> Mobile <br>
+<INPUT TYPE=RADIO NAME="home" VALUE="Thin"> Home <br>
+Phone Number*<br>
+<input type="text" name="Phome number" Value=" " size=25><br>
+Email*<br>
+<input type="text" name="Email Address" Value=" " size=25><br>
+
+<h2>Demographic Details</h2><br>
+
+Gender*<br>
+<input type="Checkbox" name="Gender">Male<br>
+<input type="Checkbox" name="Gender">Female<br>
+<input type="Checkbox" name="Gender">Non-binary<br>
+<input type="Checkbox" name="Gender">Other:<input type="text" name="Other1" Value=" " size=25><br>
+<br>
+Leagal sex*<br>
+<input type="radio" name="Gender">Male<br>
+<input type="radio" name="Gender">Female<br>
+
+
+Pronouns<br>
+<input type="radio" name="Gender">she/her<br>
+<input type="radio" name="Gender">He/him<br>
+<input type="radio" name="Gender">They/Them<br>
+<input type="radio" name="Gender">Other:<input type="text" name="Other2" Value=" " size=25><br>
+
+
+US Armed Forces Status*<br>
+<input type="radio" name="none" Value=" " size=25>None<br>
+<input type="radio" name="Active" Value=" " size=25>Active<br>
+<input type="radio" name="Retired" Value=" " size=25>Retired<br>
+<input type="radio" name="Dependent" Value=" " size=25>Dependent<br>
+
+Are you Hispanic or Latinx<br>
+<input type="radio" name="Yes" Value=" " size=25>Yes<br>
+<input type="radio" name="No" Value=" " size=25>No<br>
+
+Please indicate how you identify yourself<br>
+<input type="checkbox" name="American Indian or Alaska Native" Value=" " size=25>American Indian or Alaska Native<br>
+<input type="checkbox" name="Asian" Value=" " size=25>Asian<br>
+<input type="checkbox" name="Black or African American " Value=" " size=25>Black or African American<br>
+<input type="checkbox" name="Native Hawaiian or Other pacific Islander" Value=" " size=25>Native Hawaiian or other Pacific Islander<br>
+<input type="checkbox" name="White" Value=" " size=25>White<br>
+
+<h2> Education</h2>
+Name of instutution Graduated*<br>
+<input type="title" name="White" Value=" " size=25><br>
+Expected graduation date*<br>
+<input type="date" name="Graduation" Value=" " size=25><br>
+Type of Degree*<br>
+<input type="radio" name="BS" Value=" " size=25>Bachelors in Science<br>
+<input type="radio" name="BA" Value=" " size=25>Bachelors in Arts<br>
+Major Studied*<br>
+<input type="text" name="major" Value=" " size=25><br>
+Minor Studied<br>
+<input type="text" name="minor" Value=" " size=25><br>
+Aditional education<br>
+<TEXTAREA NAME="" ROWS=5 COLS=40>Please list any other aditional education you have such as other minors or majors and or degrees</TEXTAREA><br>
+<input type="text" name="minor" Value=" " size=25><br>
+<h2> Mcat Scores</h2>
+Testing site*<br>
+<input type="text" name="Site" Value=" " size=25><br>
+Date*<br>
+<input type="date" name="minor" Value=" " size=25><br>
+Score*<br>
+<input type="number" name="minor" min="472" max="528" size=25><br>
+<h2>Supplemental Material </h2>
+Plese upload a copy of your Resume/CV*<br>
+<input type="file" name="Resume"><br>
+Please upload a copy of your College Transcript*<br>
+<input type="file" name="transcript" Value=" " size=25><br>
+Please upload a Personal Statement detailing why you would be a good fit for Spacecat Medical school*<br>
+<input type="file" name="Personal" Value=" " size=25><br>
+
+<h2> Reccomenders</h2>
+In the space below please provide the contact information for 2 faculty/research mentos that you wish to write you a letter of reccomendation<br>
+<h4>Reccomender 1:<br></h4>
+Name:
+<input type="text" name="name" Value=" " size=25><br>
+Email:
+<input type="text" name="email" Value=" " size=25><br>
+Relation to you:
+<input type="text" name="relation" Value=" " size=25><br>
+<h4>Reccomender 2:<br></h4>
+Name:
+<input type="text" name="name" Value=" " size=25><br>
+Email:
+<input type="text" name="email" Value=" " size=25><br>
+Relation to you:
+<input type="text" name="relation" Value=" " size=25><br>
+
+
+
+
+
+
+
+
+<input type="submit" value="submit">
+<input type="Reset" value="Reset"> 
+</form>
+
+
+</body>
+</html>
