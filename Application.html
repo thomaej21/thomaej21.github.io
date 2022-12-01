@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Evan Thomas, 11/28/22, This is a HTML document that is in the form of a pizza order website.  --> 
+<!-- Evan Thomas, 11/28/22, this is an application --> 
 <html>
 <head>
 <link rel="stylesheet" href="mainpage.css">
@@ -12,35 +12,75 @@
 	background-image: url("application.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size:99.5% 100%; 
 	} 
 </style>
-	
+
+<script>
+function good()
+{
+alert("Great choice good luck in the application process");
+}
+function hard()
+{
+alert( "WOW bold move this is going to be a hard program good luck");
+}
+function nursing()
+{ alert( "Our nursing program is one of the best Great choice!")
+}
+function glue()
+{
+
+document.querySelector("#full").value =
+document.querySelector("#first").value
++" "
++document.querySelector("#last").value;
+}
+
+
+
+function confChk() 
+{ var Juniata = confirm("Is that the institution you graduated from?");
+ if (Juniata) { alert("Great! Now you can move on with the application"); }
+ else { alert("Try again by entering the correct college/University"); } } 
+ 
+ 
+ function doSum()
+{
+document.querySelector("#inner").innerHTML =
+ " Almost done keep going";
+        }
+</script>
 </head>
 <body>
 <form name="appliaction">
 <h1> Spacecat Medical School Application  </h1>
-Once you have submitted your application click <a href="Main.html"> here</a> to go back to the main page.
+Once you have submitted your application click <a href="Main.html"> here</a> to go back to the Medical school page.<br>
+Click <a href="Nurse.html">Here</a> to go to the nursing school Page
+<div id="inner">
+<h6>Welcome to the application</h6>
+</div>
 <h2> Program </h2><br>
 
-<label for="days">Select the program you will be applying for:</label> <br>
-<SELECT NAME="program" id="program" size=1> 
-<option>Medical school</option><br>
-<option>Accelerated Medical Program</option> 
-<option>Nursing</option>
-</select>
+<input type="radio" name="type" id= "Medical school" onclick="good();"> Medical School<br>
+<input type="radio" name="type" id= "Accelerated Medical" onclick="hard()";> Accelerated Medical school<br>
+<input type="radio" name="type" id= "Nursing" onclick="nursing();"> Nursing School<br>
+
 
 <h2> Personal Information </h2> <br>
-**note * means required field or your application will be void**<br>
+**Note * means required field or your application will be void**<br>
  
 First Name*<br>
-<input type="text" name="first name" Value=" " size=25><br>
+<input type="text" name="first name" id="first" Value=" " size=25><br>
 
 Middle Name<br>
-<input type="text" name="Middle Name" Value="" size=25><br>
+<input type="text" name="Middle Name" id="middle" Value="" size=25><br>
  
 Last Name*<br>
-<input type="text" name="Last name" Value=" " size=25><br>
-
+<input type="text" id="last"  Value=" " size=25 onchange="glue();"><br>
+Please confrim First & Last name below:<br>
+<input type="text" name="full name" id="full"><br>
 Date of birth*<br>
 <input type="date" id="birthday" name="birthday">
+
+
 
 <h2>Address</h2>
 Permanant Home address*<br>
@@ -50,12 +90,12 @@ Alternate mailing address<br>
 
 <h2> Contact Details</h2>
 Prefered Phone*<br>
-<INPUT TYPE=RADIO NAME="Mobile" VALUE="Thin"> Mobile <br>
+<INPUT TYPE=RADIO NAME="home" VALUE="Thin"> Mobile <br>
 <INPUT TYPE=RADIO NAME="home" VALUE="Thin"> Home <br>
 Phone Number*<br>
 <input type="text" name="Phome number" Value=" " size=25><br>
 Email*<br>
-<input type="text" name="Email Address" Value=" " size=25><br>
+<input type="text" name="Email Address" Value=" " size=25 onchange="doSum();"><br>
 
 <h2>Demographic Details</h2><br>
 
@@ -78,25 +118,25 @@ Pronouns<br>
 
 
 US Armed Forces Status*<br>
-<input type="radio" name="none" Value=" " size=25>None<br>
-<input type="radio" name="Active" Value=" " size=25>Active<br>
-<input type="radio" name="Retired" Value=" " size=25>Retired<br>
-<input type="radio" name="Dependent" Value=" " size=25>Dependent<br>
+<input type="radio" name="Army" Value=" " size=25>None<br>
+<input type="radio" name="Army" Value=" " size=25>Active<br>
+<input type="radio" name="Army" Value=" " size=25>Retired<br>
+<input type="radio" name="Army" Value=" " size=25>Dependent<br>
 
 Are you Hispanic or Latinx<br>
 <input type="radio" name="Yes" Value=" " size=25>Yes<br>
-<input type="radio" name="No" Value=" " size=25>No<br>
+<input type="radio" name="Yes" Value=" " size=25>No<br>
 
 Please indicate how you identify yourself<br>
-<input type="checkbox" name="American Indian or Alaska Native" Value=" " size=25>American Indian or Alaska Native<br>
-<input type="checkbox" name="Asian" Value=" " size=25>Asian<br>
-<input type="checkbox" name="Black or African American " Value=" " size=25>Black or African American<br>
-<input type="checkbox" name="Native Hawaiian or Other pacific Islander" Value=" " size=25>Native Hawaiian or other Pacific Islander<br>
-<input type="checkbox" name="White" Value=" " size=25>White<br>
+<input type="checkbox" name="USA" Value=" " size=25>American Indian or Alaska Native<br>
+<input type="checkbox" name="USA" Value=" " size=25>Asian<br>
+<input type="checkbox" name="USA" Value=" " size=25>Black or African American<br>
+<input type="checkbox" name="USA" Value=" " size=25>Native Hawaiian or other Pacific Islander<br>
+<input type="checkbox" name="USA" Value=" " size=25>White<br>
 
 <h2> Education</h2>
 Name of instutution Graduated*<br>
-<input type="title" name="White" Value=" " size=25><br>
+<input type="title" name="institution" id="juniata" Value=" " onchange="confChk();" size=25><br>
 Expected graduation date*<br>
 <input type="date" name="Graduation" Value=" " size=25><br>
 Type of Degree*<br>
